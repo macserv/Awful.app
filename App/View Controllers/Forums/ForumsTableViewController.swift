@@ -5,6 +5,7 @@
 import AwfulCore
 import CoreData
 import UIKit
+import SwiftUI
 
 final class ForumsTableViewController: TableViewController {
     
@@ -152,6 +153,30 @@ final class ForumsTableViewController: TableViewController {
         pullToRefreshBlock = { [weak self] in
             self?.refresh()
         }
+        
+        if #available(iOS 14.0, *) {
+            lazy var searchButton: UIBarButtonItem = {
+                return UIBarButtonItem(title: "Search", style: .plain, target: self, action: #selector(searchForums))
+            }()
+            
+            navigationItem.setLeftBarButton(searchButton, animated: true)
+        }
+    }
+    
+    @available(iOS 14.0, *)
+    @objc fileprivate func searchForums() {
+        if UserDefaults.standard.enableHaptics {
+            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+        }
+        
+        let searchModel = SearchPageViewModel(searchPageHTMLString: SearchPageViewModel.searchPageHTMLString)
+        let searchView = UIHostingController(rootView: SearchView(model: searchModel))
+        
+        searchView.restorationIdentifier = "Search view"
+        searchView.modalPresentationStyle = .fullScreen
+        // fullscreen or no?
+        present(searchView, animated: true)
+        //self.navigationController?.pushViewController(searchView, animated: true)
     }
 
     override func themeDidChange() {

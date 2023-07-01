@@ -247,6 +247,7 @@
 		2D327DD627F468CE00D21AB0 /* BookmarkColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D327DD527F468CE00D21AB0 /* BookmarkColorPicker.swift */; };
 		2D921269292F588100B16011 /* platinum-member.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D921268292F588100B16011 /* platinum-member.png */; };
 		2DD8209C25DDD9BF0015A90D /* CopyImageActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8209B25DDD9BF0015A90D /* CopyImageActivity.swift */; };
+		2DE30ADD2A4D880F001FAA28 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE30ADC2A4D880F001FAA28 /* Search.swift */; };
 		2DFDF71329A366BA0078CE52 /* posts-view-spankykong-oled-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DFDF71229A366BA0078CE52 /* posts-view-spankykong-oled-dark.css */; };
 		2DFDF71529A366E20078CE52 /* posts-view-spankykong-light.css in Resources */ = {isa = PBXBuildFile; fileRef = 2DFDF71429A366E20078CE52 /* posts-view-spankykong-light.css */; };
 		7B0EA0B81D96B17B008B0A90 /* SettingsSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0EA0B71D96B17B008B0A90 /* SettingsSliderCell.swift */; };
@@ -626,6 +627,7 @@
 		2D327DD527F468CE00D21AB0 /* BookmarkColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkColorPicker.swift; sourceTree = "<group>"; };
 		2D921268292F588100B16011 /* platinum-member.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "platinum-member.png"; sourceTree = "<group>"; };
 		2DD8209B25DDD9BF0015A90D /* CopyImageActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyImageActivity.swift; sourceTree = "<group>"; };
+		2DE30ADC2A4D880F001FAA28 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		2DFDF71229A366BA0078CE52 /* posts-view-spankykong-oled-dark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "posts-view-spankykong-oled-dark.css"; sourceTree = "<group>"; };
 		2DFDF71429A366E20078CE52 /* posts-view-spankykong-light.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "posts-view-spankykong-light.css"; sourceTree = "<group>"; };
 		3DEC84CD16F06A21949AA42D /* Pods-Awful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awful.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Awful/Pods-Awful.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1364,6 +1366,7 @@
 				1C16FBBF1CB950BE00C88BD1 /* ThreadTagButton.swift */,
 				2D327DD527F468CE00D21AB0 /* BookmarkColorPicker.swift */,
 				2D265F94292CC19B001336ED /* NigglyRefreshLottieView.swift */,
+				2DE30ADC2A4D880F001FAA28 /* Search.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2006,6 +2009,7 @@
 				1C2C1F141CEE90D900CD27DD /* AppDelegate.swift in Sources */,
 				1CF6786B201E751D009A9640 /* MessageListDataSource.swift in Sources */,
 				1C5C81BF22DA336A00EFD8A9 /* ChromeActivity.swift in Sources */,
+				2DE30ADD2A4D880F001FAA28 /* Search.swift in Sources */,
 				1C3E1817224C659500BD88E5 /* CGImage+IsOpaque.swift in Sources */,
 				1C16FC141CCEE60C00C88BD1 /* MessageComposeViewController.swift in Sources */,
 				1C8F67F4222105E4007E61ED /* StencilEnvironment.swift in Sources */,
